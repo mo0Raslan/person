@@ -1,0 +1,120 @@
+/*Reverse string
+            var x = Console.ReadLine();
+            var y = "";
+            for (int i = x.Length - 1; i >= 0; i--) y+=x[i];
+            Console.WriteLine(y);
+            */
+            /*Count a's
+            var x = Console.ReadLine();
+            int count = 0;
+            for (int i = x.Length - 1; i >= 0; i--) if (x[i]=='a')count++;
+            */
+            /*last index of a
+            var x = Console.ReadLine();
+            int count = 0;
+            for (int i = x.Length - 1; i >= 0; i--) if (x[i]=='a')
+            {
+            Console.WritLine(i);
+            }; 
+             */
+            /*remove all a's
+            var x = Console.ReadLine();
+            var y = "";
+            for (int i = 0; i < x.Length; i++) if (x[i] != 'a') y += x[i];
+            Console.WriteLine(y);
+             */
+            /*add 0 after all a
+            var x = Console.ReadLine();
+            var y = "";
+            for (int i = 0; i < x.Length; i++){
+                y += x[i];
+                if (x[i] == 'a') y += 0;
+            }
+            Console.WriteLine(y);
+            */
+            /*count non literals
+            var x = Console.ReadLine();
+            int count = 0;
+            for(int i = 0; i < x.Length; i++) if (x[i] >= 65 && x[i]<=122)count++;
+            Console.WriteLine(count);
+             */
+            /*Is plaindrome
+            var x = Console.ReadLine();
+            var y = "";
+            for (int i = x.Length - 1; i >= 0; i--) y+=x[i];
+            Console.WriteLine(y==x)
+             */
+            /* Remove duplicates
+            var x = Console.ReadLine();
+            var y = "";
+            for(int i = 0; i < x.Length - 1; i++)
+            {
+                int j = i + 1;
+                if (x[i] != x[j]) y += x[i];
+            }
+             */
+            /*mean from array
+             var x = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[x];
+            int y = 0;
+            for (int i = 0; i < arr.Length; i++) arr[i] = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < arr.Length; i++) y += arr[i];
+            int c = y / x;
+            for (int i = 0; i < arr.Length-1; i++)
+                for(int j = 0; j < arr.Length-i-1; j++)
+                {
+                    if(arr[i] > arr[j])
+                    {
+                        int temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            var min = arr[0];
+            for (int i = 0; i < arr.Length - 1; i++) if ((min > arr[i]) && (min<arr[i+1]))
+                    min = arr[i];
+            Console.WriteLine(min);
+             */
+            /* Mean of min max
+             int max =int.MinValue;
+            int min =int.MaxValue;
+            int x = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[x];
+            for(int i = 0; i < arr.Length; i++) arr[i] = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if(arr[i] > max)max = arr[i];
+                if (arr[i] < min) min = arr[i];
+            }
+            Console.WriteLine((max+min)/2);
+             */
+            /*missing integer
+             var size= Convert.ToInt32(Console.ReadLine());
+            var arr = new int[size];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < arr.Length-1; i++)
+            {
+                var diff = arr[i+1] - arr[i];
+                //20-18
+                if(diff > 1) arr[i] = arr[i] + 1;
+            }
+             */
+            /*first largest element greater than AVG
+             var size = Convert.ToInt32(Console.ReadLine());
+            var arr = new int[size];
+            for (int i = 0; i < arr.Length; i++) arr[i] = Convert.ToInt32(Console.ReadLine());
+            var avg = 0;
+            for (int i = 0; i < arr.Length; i++) avg += arr[i];
+            int n;
+            for (int i = 0; i < arr.Length; i++) 
+            {
+                if (avg > arr[i])
+                {
+                    n = arr[i];
+                    break;
+                }
+            }
+             */
